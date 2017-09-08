@@ -19,8 +19,11 @@
 </head>
 <body>
   @include('partials/header')
+
+  @include('layouts/splash')
+
   <!-- Dynamic Content -->
-  <div class="container">
+  <div class="container" id="content">
     @yield('content')
   </div>
 
