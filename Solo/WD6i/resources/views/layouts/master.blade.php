@@ -20,7 +20,8 @@
 <body>
   @include('partials/header')
 
-  @include('layouts/splash')
+  <!-- SPLASH -->
+  @yield('splash')
 
   <!-- Dynamic Content -->
   <div class="container" id="content">

@@ -11,18 +11,31 @@
   font-size: 16px;
 }
 
-/*SPLASH*/
-.splash-wrap{
-	padding: 15% 5%;
-	margin: 0;
-
-	height: 90vh;
-
-	background: white url('https://images.unsplash.com/photo-1427504494785-3a9ca7044f45') no-repeat left;
-	color: white;
+/*NAVBAR*/
+.navbar{
+	margin-bottom: 2px;
 }
 
-.splash-wrap h1, h2{
-	font-size: 400%;
-	font-weight: bold;
+/*SPLASH*/
+.splash-wrap{
+	margin-bottom: 25%;
+
+	max-height: 80%;
+}
+
+ #carousel-wrap{
+ 	height: 100%;
+ }
+
+.splash-wrap h1{
+	font-size: 350%;
+}
+
+.splash-wrap h2{
+	font-size: 250%;
+	padding-bottom: 2%;
+}
+
+.go-to-content{
+	margin-bottom: 3%;
 }
