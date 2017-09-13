@@ -13,7 +13,12 @@ class ProductController extends Controller
 {
     public function getIndex(){
     	$products = Product::all();
-    	return view('shop/index', ['products' => $products]);
+    	return view('layouts/index', ['products' => $products]);
+    }
+
+    public function getHome(){
+        $products = Product::all();
+        return view('shop/home', ['products' => $products]);
     }
 
     public function getAddToCart(Request $request, $id){
