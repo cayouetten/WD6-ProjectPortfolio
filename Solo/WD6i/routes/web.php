@@ -16,6 +16,11 @@ Route::get('/', [
 	'as' => 'product/index'
 ]);
 
+Route::get('/home', [
+	'uses' => 'ProductController@getHome',
+	'as' => 'product/home'
+]);
+
 Route::get('/add-to-cart/{id}', [
 	'uses' => 'ProductController@getAddToCart',
 	'as' => 'product/addToCart'
@@ -24,6 +29,16 @@ Route::get('/add-to-cart/{id}', [
 Route::get('/shopping-cart', [
 	'uses' => 'ProductController@getCart',
 	'as' => 'product/shoppingCart'
+]);
+
+Route::get('/add-to-wish-list/{id}', [
+	'uses' => 'ProductController@getAddToWishList',
+	'as' => 'product/addToWishList'
+]);
+
+Route::get('/wish-list', [
+	'uses' => 'ProductController@getWishList',
+	'as' => 'product/wishList'
 ]);
 
 Route::group(['prefix' => 'users'], function(){

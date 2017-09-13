@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ route('product/index') }}">WD6I</a>
+      <a class="navbar-brand" href="{{ route('product/home') }}">WD6I</a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -17,6 +17,12 @@
           <a href="{{ route('product/shoppingCart') }}">
             <i class="fa fa-shopping-cart"></i> Cart
             <span class="badge">{{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ route('product/wishList') }}">
+            <i class="fa fa-heart"></i> Wish List
+            <span class="badge">{{ Session::has('wishList') ? Session::get('wishList')->totalQty : '' }}</span>
           </a>
         </li>
         <li class="dropdown">

@@ -5,7 +5,31 @@
 .thumbnail .description{
   color: darkgray;
 }
+
 .price{
   font-weight: bold;
   font-size: 16px;
+}
+
+/*SPLASH*/
+.splash-wrap{
+	margin-bottom: 20px;
+	min-height: 100vh;
+}
+
+ #carousel-wrap{
+ 	min-height: 100%;
+ }
+
+.splash-wrap h1{
+	font-size: 350%;
+}
+
+.splash-wrap h2{
+	font-size: 250%;
+	padding-bottom: 2%;
+}
+
+.go-to-content{
+	margin-bottom: 3%;
 }

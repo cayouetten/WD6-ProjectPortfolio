@@ -19,8 +19,9 @@
 </head>
 <body>
   @include('partials/header')
+
   <!-- Dynamic Content -->
-  <div class="container">
+  <div class="container" id="content">
     @yield('content')
   </div>
 
