@@ -34,7 +34,7 @@
 		<hr>
 		<div class="row">
 			<div class="col-sm-6 col-md-6 col-sm-offset-3 col-md-offset-3">
-				<button type="button" class="btn btn-success">Checkout</button>
+				<a href="<?php echo e(route('checkout')); ?>" class="btn btn-success">Checkout</a>
 			</div>
 		</div>
 	<?php else: ?>

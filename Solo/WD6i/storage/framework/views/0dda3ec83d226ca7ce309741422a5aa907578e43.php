@@ -3,6 +3,22 @@
   Shop at WD6I - Laravel
 <?php $__env->stopSection(); ?>
 
+<?php
+// Include stripe-php as you usually do, either with composer as shown,
+// or with a direct require, as commented out.
+require_once("../vendor/autoload.php");
+// require_once("/path/to/stripe-php/init.php");
+
+\Stripe\Stripe::setApiKey("sk_test_BQokikJOvBiI2HlWgH4olfQ2");
+\Stripe\Stripe::$apiBase = "https://api-tls12.stripe.com";
+try {
+  \Stripe\Charge::all();
+  echo "TLS 1.2 supported, no action required.";
+} catch (\Stripe\Error\ApiConnection $e) {
+  echo "TLS 1.2 is not supported. You will need to upgrade your integration.";
+}
+?>
+
 <!-- SPLASH ON FIRST LANDING -->
 <div class="splash-wrap">
 	<div id="carousel-wrap">
@@ -22,8 +38,9 @@
 		      <div class="container">
 		        <div class="carousel-caption">
 			        <h1>WD6-International</h1>
-							<h2><em>Academic Resources For All Levels</em></h2>
-							<a href="<?php echo e(route('product/home')); ?>" class="btn btn-info go-to-content">Continue to Inventory</a>
+					<h2><em>Academic Resources For All Levels</em></h2>
+					<a href="<?php echo e(route('product/home')); ?>" class="btn btn-info go-to-content">Continue to Inventory</a>
+					<a href="<?php echo e(route('users/signin')); ?>" class="btn btn-info go-to-content">Sign In</a>
 		        </div>
 		      </div>
 		    </div>

@@ -30,6 +30,7 @@
 				<?php echo e(csrf_field()); ?>
 
 			</form>
+			<p>Don't have an account? <a href="<?php echo e(route('users/signup')); ?>">Join Us</a>
 		</div>
 	</div>
 <?php $__env->stopSection(); ?>
