@@ -22,8 +22,7 @@
 									<!-- ADD TO CART FROM WISH LIST -->
 									<li><a href="{{ route('product/addToCart', ['id'=> $product['item']['id']]) }}" role="button">Add to Cart</a></li>
 									<!-- REMOVE FROM WISH LIST -->
-									<li><a href="#">Remove One</a></li>
-									<li><a href="#">Remove All</a></li>
+									<li><a href="{{ route('product/removeFromWishList', ['id'=> $product['item']['id']]) }}">Remove</a></li>
 								</ul>
 							</div>
 						</li>
