@@ -19,8 +19,9 @@
 							<div class="btn-group">
 								<button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
 								<ul class="dropdown-menu">
-									<li><a href="#">Remove One</a></li>
-									<li><a href="#">Remove All</a></li>
+									<!-- REMOVE FROM CART -->
+									<li><a href="{{ route('product/removeFromCart', ['id'=> $product['item']['id']]) }}">Remove</a></li>
+									<li><a href="{{ route('product/removeAllCartItem', ['id'=> $product['item']['id']]) }}">Remove All</a></li>
 								</ul>
 							</div>
 						</li>

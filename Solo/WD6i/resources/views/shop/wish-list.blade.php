@@ -20,10 +20,10 @@
 								<button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
 								<ul class="dropdown-menu">
 									<!-- ADD TO CART FROM WISH LIST -->
-									<li><a href="{{ route('product/addToCart', ['id'=> $product['item']['id']]) }}" role="button">Add to Cart</a></li>
+									<li><a href="{{ route('product/addToCartFromWishlist', ['id'=> $product['item']['id']]) }}" role="button">Add to Cart</a></li>
 									<!-- REMOVE FROM WISH LIST -->
-									<li><a href="#">Remove One</a></li>
-									<li><a href="#">Remove All</a></li>
+									<li><a href="{{ route('product/removeFromWishList', ['id'=> $product['item']['id']]) }}">Remove</a></li>
+									<li><a href="{{ route('product/removeAllWishlistItem', ['id'=> $product['item']['id']]) }}">Remove All</a></li>
 								</ul>
 							</div>
 						</li>
