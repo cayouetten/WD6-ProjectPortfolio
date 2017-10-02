@@ -2,16 +2,16 @@
 
 namespace App;
 
-class Cart{
+class WishList{
     public $items;
     public $totalQty = 0;
     public $totalPrice = 0;
 
-    public function __construct($oldCart){
-        if($oldCart){
-            $this->items = $oldCart->items;
-            $this->totalQty = $oldCart->totalQty;
-            $this->totalPrice = $oldCart->totalPrice;
+    public function __construct($oldWishList){
+        if($oldWishList){
+            $this->items = $oldWishList->items;
+            $this->totalQty = $oldWishList->totalQty;
+            $this->totalPrice = $oldWishList->totalPrice;
         }
     }
 
