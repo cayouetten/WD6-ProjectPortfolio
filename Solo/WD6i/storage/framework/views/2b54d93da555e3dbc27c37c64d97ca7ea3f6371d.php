@@ -8,7 +8,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+<<<<<<< HEAD:Solo/WD6i/storage/framework/views/2b54d93da555e3dbc27c37c64d97ca7ea3f6371d.php
       <a class="navbar-brand" href="<?php echo e(route('product/home')); ?>">WD6I</a>
+=======
+      <a class="navbar-brand" href="{{ route('product/home') }}">WD6I</a>
+>>>>>>> wish-list:Solo/WD6i/resources/views/partials/header.blade.php
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -23,6 +27,12 @@
           <a href="<?php echo e(route('product/wishList')); ?>">
             <i class="fa fa-heart"></i> Wish List
             <span class="badge"><?php echo e(Session::has('wishList') ? Session::get('wishList')->totalQty : ''); ?></span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ route('product/wishList') }}">
+            <i class="fa fa-heart"></i> Wish List
+            <span class="badge">{{ Session::has('wishList') ? Session::get('wishList')->totalQty : '' }}</span>
           </a>
         </li>
         <li class="dropdown">

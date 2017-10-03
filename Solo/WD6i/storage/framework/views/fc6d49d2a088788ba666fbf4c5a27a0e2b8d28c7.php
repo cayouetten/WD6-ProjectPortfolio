@@ -18,11 +18,19 @@
   <?php echo $__env->yieldContent('styles'); ?>
 </head>
 <body>
+<<<<<<< HEAD:Solo/WD6i/storage/framework/views/fc6d49d2a088788ba666fbf4c5a27a0e2b8d28c7.php
   <?php echo $__env->make('partials/header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
   <!-- Dynamic Content -->
   <div class="container" id="content">
     <?php echo $__env->yieldContent('content'); ?>
+=======
+  @include('partials/header')
+
+  <!-- Dynamic Content -->
+  <div class="container" id="content">
+    @yield('content')
+>>>>>>> wish-list:Solo/WD6i/resources/views/layouts/master.blade.php
   </div>
 
   <!-- jQuery Script -->

@@ -6,6 +6,9 @@
 @endsection
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> wish-list
 <?php
 // Include stripe-php as you usually do, either with composer as shown,
 // or with a direct require, as commented out.
@@ -23,8 +26,11 @@ try {
 
 ?>
 
+<<<<<<< HEAD
 =======
 >>>>>>> checkout
+=======
+>>>>>>> wish-list
 <!-- SPLASH ON FIRST LANDING -->
 <div class="splash-wrap">
 	<div id="carousel-wrap">

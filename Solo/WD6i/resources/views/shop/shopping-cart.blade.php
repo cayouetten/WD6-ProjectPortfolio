@@ -21,11 +21,15 @@
 								<ul class="dropdown-menu">
 									<!-- REMOVE FROM CART -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 									<li><a href="{{ route('product/removeFromWishList', ['id'=> $product['item']['id']]) }}">Remove</a></li>
 =======
 									<li><a href="{{ route('product/removeFromCart', ['id'=> $product['item']['id']]) }}">Remove</a></li>
 									<li><a href="{{ route('product/removeAllCartItem', ['id'=> $product['item']['id']]) }}">Remove All</a></li>
 >>>>>>> checkout
+=======
+									<li><a href="{{ route('product/removeFromWishList', ['id'=> $product['item']['id']]) }}">Remove</a></li>
+>>>>>>> wish-list
 								</ul>
 							</div>
 						</li>

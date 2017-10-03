@@ -39,6 +39,7 @@ class Cart{
         $this->items[$id]['price'] -= $this->items[$id]['item']['price'];
         $this->totalQty--;
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->totalPrice -= $this->items[$id]['qty'];
 =======
         $this->totalPrice -= $this->items[$id]['item']['price'];
@@ -53,5 +54,8 @@ class Cart{
         $this->totalPrice -= $this->items[$id]['price'];
         unset($this->items[$id]);
 >>>>>>> checkout
+=======
+        $this->totalPrice -= $this->items[$id]['qty'];
+>>>>>>> wish-list
     }
 }

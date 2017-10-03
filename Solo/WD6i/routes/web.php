@@ -32,6 +32,7 @@ Route::get('/remove-from-cart/{id}', [
 ]);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Route::get('/remove-all-cart-item/{id}', [
 	'uses' => 'ProductController@getRemoveAllCartItem',
@@ -39,6 +40,8 @@ Route::get('/remove-all-cart-item/{id}', [
 ]);
 
 >>>>>>> checkout
+=======
+>>>>>>> wish-list
 Route::get('/shopping-cart', [
 	'uses' => 'ProductController@getCart',
 	'as' => 'product/shoppingCart'
@@ -62,6 +65,7 @@ Route::get('/add-to-wish-list/{id}', [
 ]);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Route::get('/add-to-cart-from-wish-list/{id}', [
 	'uses' => 'ProductController@getAddToCartFromWishlist',
@@ -69,11 +73,14 @@ Route::get('/add-to-cart-from-wish-list/{id}', [
 ]);
 
 >>>>>>> checkout
+=======
+>>>>>>> wish-list
 Route::get('/remove-from-wish-list/{id}', [
 	'uses' => 'ProductController@getRemoveFromWishList',
 	'as' => 'product/removeFromWishList'
 ]);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 Route::get('/remove-all-wishlist-item/{id}', [
@@ -82,6 +89,8 @@ Route::get('/remove-all-wishlist-item/{id}', [
 ]);
 
 >>>>>>> checkout
+=======
+>>>>>>> wish-list
 Route::get('/wish-list', [
 	'uses' => 'ProductController@getWishList',
 	'as' => 'product/wishList'

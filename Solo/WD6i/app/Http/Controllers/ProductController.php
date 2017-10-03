@@ -36,9 +36,12 @@ class ProductController extends Controller
 
     	$request->session()->put('cart', $cart);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> checkout
+=======
+>>>>>>> wish-list
     	return redirect()->route('product/home');
     }
 
@@ -48,6 +51,7 @@ class ProductController extends Controller
         $cart = new Cart($oldCart);
         $cart->remove($id);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         Session::put('cart', $cart);
 =======
@@ -72,6 +76,9 @@ class ProductController extends Controller
             Session::forget('cart');
         }
 >>>>>>> checkout
+=======
+        Session::put('cart', $cart);
+>>>>>>> wish-list
 
         return redirect()->route('product/shoppingCart');
     }
@@ -90,9 +97,12 @@ class ProductController extends Controller
             return view('shop/shopping-cart');
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> checkout
+=======
+>>>>>>> wish-list
         $oldCart = Session::get('cart');
         $cart = new Cart($oldCart);
         $total = $cart->totalPrice;
@@ -122,10 +132,14 @@ class ProductController extends Controller
             $order->payment_id = $charge->id;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             Auth::user()->orders()->save($orders);
 =======
             Auth::user()->orders()->save($order);
 >>>>>>> checkout
+=======
+            Auth::user()->orders()->save($orders);
+>>>>>>> wish-list
 
         } catch (\Exception $e){
             return redirect()->route('checkout')->with('error', $e->getMessage());
@@ -147,6 +161,7 @@ class ProductController extends Controller
         return redirect()->route('product/home');
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     public function getAddToCartFromWishlist(Request $request, $id){
@@ -174,12 +189,15 @@ class ProductController extends Controller
     }
 
 >>>>>>> checkout
+=======
+>>>>>>> wish-list
     public function getRemoveFromWishList(Request $request, $id){
         $oldWishList = Session::has('wishList') ? Session::get('wishList') : null;
 
         $wishList = new WishList($oldWishList);
         $wishList->remove($id);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         Session::put('wishList', $wishList);
 =======
@@ -189,10 +207,14 @@ class ProductController extends Controller
             Session::forget('wishList');
         }
 >>>>>>> checkout
+=======
+        Session::put('wishList', $wishList);
+>>>>>>> wish-list
         
         return redirect()->route('product/wishList');
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     public function getRemoveAllWishlistItem($id){
@@ -211,6 +233,8 @@ class ProductController extends Controller
     }
 
 >>>>>>> checkout
+=======
+>>>>>>> wish-list
     public function getWishList(){
         if(!Session::has('wishList')){
             return view('shop/wish-list');
