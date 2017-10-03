@@ -13,7 +13,11 @@
 			<hr>
 			<h2>My Orders</h2>
 
+<<<<<<< HEAD
 			@foreach($orders as order)
+=======
+			@foreach($orders as $order)
+>>>>>>> checkout
 			<div class="panel panel-default">
 				<div class="panel-body">
 					<ul class="list-group">

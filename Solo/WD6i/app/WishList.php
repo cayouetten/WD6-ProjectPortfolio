@@ -38,6 +38,20 @@ class WishList{
         $this->items[$id]['qty']--;
         $this->items[$id]['price'] -= $this->items[$id]['item']['price'];
         $this->totalQty--;
+<<<<<<< HEAD
         $this->totalPrice -= $this->items[$id]['qty'];
+=======
+        $this->totalPrice -= $this->items[$id]['item']['price'];
+
+        if($this->items[$id]['qty'] <= 0){
+            unset($this->items[$id]);
+        }
+    }
+
+    public function removeAllWishlistItem($id) {
+        $this->totalQty -= $this->items[$id]['qty'];
+        $this->totalPrice -= $this->items[$id]['price'];
+        unset($this->items[$id]);
+>>>>>>> checkout
     }
 }

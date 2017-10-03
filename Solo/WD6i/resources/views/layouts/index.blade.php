@@ -5,6 +5,7 @@
   Shop at WD6I - Laravel
 @endsection
 
+<<<<<<< HEAD
 <?php
 // Include stripe-php as you usually do, either with composer as shown,
 // or with a direct require, as commented out.
@@ -22,6 +23,8 @@ try {
 
 ?>
 
+=======
+>>>>>>> checkout
 <!-- SPLASH ON FIRST LANDING -->
 <div class="splash-wrap">
 	<div id="carousel-wrap">

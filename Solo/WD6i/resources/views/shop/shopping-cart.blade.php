@@ -20,7 +20,12 @@
 								<button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
 								<ul class="dropdown-menu">
 									<!-- REMOVE FROM CART -->
+<<<<<<< HEAD
 									<li><a href="{{ route('product/removeFromWishList', ['id'=> $product['item']['id']]) }}">Remove</a></li>
+=======
+									<li><a href="{{ route('product/removeFromCart', ['id'=> $product['item']['id']]) }}">Remove</a></li>
+									<li><a href="{{ route('product/removeAllCartItem', ['id'=> $product['item']['id']]) }}">Remove All</a></li>
+>>>>>>> checkout
 								</ul>
 							</div>
 						</li>
